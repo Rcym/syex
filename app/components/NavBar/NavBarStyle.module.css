@@ -1,0 +1,82 @@
+
+.container {
+    background-color: var(--mainColor_500);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+
+
+/*     search bar part   */
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    background-color: var(--mainColor_400);
+    width: 50%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: var(--commonBorderRadius);
+}
+
+.searchIcon {
+    color: var(--softTextColor);
+    margin-left: 10px;
+}
+
+
+
+
+
+
+/*     option btns part   */
+
+.navbarOptions {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    margin-right: 20px;
+    gap: 5px;
+}
+
+.navbarBtn {
+    background-color: var(--mainColor_300);
+    height: 80%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarBtn:hover {
+    background-color: var(--mainColor_400);
+    cursor: pointer;
+}
+
+.optionIcon {
+    color: white;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--softTextColor);
+    font-size: 0.8rem;
+    flex-grow: 1;
+    margin: 0px 5px;
+}
+
+.searchInput::placeholder {
+    color: var(--softTextColor);
+}

@@ -1,0 +1,313 @@
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 50px);
+}
+
+
+
+
+.FeedContainer {
+    flex: 1;
+}
+
+.rightMenuContainer {
+    width: 280px;
+}
+
+
+
+
+
+/*   Left Menu   */
+
+.leftMenuContainer {
+    width: 250px;
+}
+
+.leftMenuElement {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 15px;
+    border-radius: var(--commonBorderRadius);
+}
+
+.leftMenuElement:hover {
+    background-color: var(--mainColor_400);
+    cursor: pointer;
+}
+
+.leftMenuElement h3 {
+    margin: 15px 0px;
+}
+
+.MenuElementIcon {
+    margin: 10px;
+}
+
+.devider {
+    border-bottom: 1px solid var(--mainColor_400);
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/*   might know component   */
+
+
+.mightKnowPersonContainer {
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+}
+
+.mightKnowPersonContainer {
+    display: flex;
+}
+
+.mightKnowPersonContainer p {
+    margin: 0px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.mightKnowPersonContainer button {
+    margin-left: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_400);
+    color: var(--softTextColor);
+}
+
+.mightKnowPersonContainer button:hover {
+    background-color: var(--mainColor_300);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*  connected friends section   */
+
+.connectedFriendsListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.img {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ConnectedFriendElement {
+    background-color: var(--mainColor_300);
+    margin: 5px;
+    width: 33px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    width: 10px;
+    height: 10px;
+    bottom: 0px;
+    right: 0px;
+    /* aspect-ratio: 1/1; */
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+}
+
+
+
+
+
+
+/*   Trends    */
+
+.trendElement {
+    display: flex;
+    margin: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--mainColor_400);
+}
+
+.trendElementCore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 10px;
+    flex-grow: 1;
+}
+
+.trendElementTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.trendElementSubtitle {
+    font-size: 12px;
+    margin: 0px;
+    color: var(--softTextColor);
+}
+
+
+
+
+
+
+
+
+
+
+/*   Feed    */
+
+.FeedSectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.FeedContainer {
+    display: flex;
+    flex-grow: 1;
+    width: 650px;
+    flex-direction: column;
+}
+
+
+ /*  add psot element  */
+
+.addPostElement {
+    display: flex;
+}
+
+.mainBtn {
+    background-color: var(--mainColor_400);
+    border: none;
+    padding: 8px 20px;
+    flex-grow: 1;
+    border-radius: var(--commonBorderRadius);
+    color: var(--softTextColor);
+    margin: 10px;
+}
+
+.mainBtn:hover {
+    background-color: var(--mainColor_300);
+    cursor: pointer;
+}
+
+.PictureBtn {
+    background-color: var(--mainColor_400);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--commonBorderRadius);
+    color: var(--softTextColor);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PictureBtn:hover {
+    background-color: var(--mainColor_300);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*    POST    */
+
+/* .postElement {
+} */
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.postProfilPic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--mainColor_300);
+    margin: 0px 15px 0px 0px;
+}
+
+.postHeaderInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.postProfilName {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3px 0px;
+}
+
+.postProfilDate {
+    font-size: 12px;
+    margin: 0px;
+    color: var(--softTextColor);
+}
+
+
+/*  post core  */
+
+.postCore {
+    margin: 15px 15px 0px 15px;
+}
+
+.postImg {
+    width: 100%;
+    border-radius: var(--commonBorderRadius);
+}
+
+
+/*  post subsection  */
+
+.postSubsection {
+    display: flex;
+    /* margin: 0px 15px; */
+    flex-direction: row;
+    align-items: center;
+}
+
+.postDetailElement {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 15px;
+    border-radius: var(--commonBorderRadius);
+}
+
+.postDetailElement:hover {
+    background-color: var(--mainColor_400);
+    cursor: pointer;
+}
