@@ -1,0 +1,28 @@
+
+.messagerieMainSection {
+    display: flex;
+}
+
+.messagerieCore {
+    /* background-color: var(--mainColor_500); */
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - var(--navbarHeight));
+}
+
+
+
+
+
+/*  contact list  */
+
+.contactList {
+    height: 100%;
+    width: 300px;
+    border-right: 1px solid var(--mainColor_500);
+    border-left: 1px solid var(--mainColor_500);
+}
+
+.contactList h3 {
+    margin: 20px;
+}
