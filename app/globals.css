@@ -24,6 +24,7 @@ body {
   background-color: var(--bgColor_900);
   color: var(--textColor);
   margin: 0px;
+  overflow-x: hidden;
 }
 
 
@@ -46,3 +47,220 @@ body {
 
 
 
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* ::-webkit-scrollbar-track {
+} */
+
+::-webkit-scrollbar-thumb {
+  background: var(--mainColor_300);
+  border-radius: var(--commonBorderRadius);
+  cursor: pointer;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+} */
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+
+
+
+.popupContainer {
+  background-color: var(--mainColor_500);
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: var(--commonBorderRadius);
+  border: 1px solid var(--mainColor_400);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 99;
+  box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.5);
+}
+
+.popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+.popupHeader h3 {
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.exitBtn {
+  border: none;
+  margin: 10px !important;
+  background-color: var(--mainColor_300);
+  color: var(--softTextColor);
+  border-radius: var(--commonBorderRadius);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.exitBtn:hover {
+  background-color: var(--mainColor_400);
+  color: var(--textColor);
+}
+
+.popupBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupBody form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+
+
+
+
+
+
+
+
+
+.popupInputElement {
+  margin: 8px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.popupInputElement p {
+  margin: 8px 0px;
+  font-size: 0.8rem;
+  color: var(--softTextColor);
+}
+
+.popupInputElement input {
+  border: none;
+  background-color: var(--mainColor_400);
+  color: var(--textColor);
+  border-radius: var(--commonBorderRadius);
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.popupInputElement input:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px var(--mainColor_400);
+}
+
+/* style the input type file */
+.popupInputElement input::file-selector-button {
+  border: none;
+  background-color: var(--mainColor_500);
+  color: var(--textColor);
+  border-radius: var(--commonBorderRadius);
+  padding: 5px 10px;
+}
+
+.popupInputElement input::file-selector-button:hover {
+  background-color: var(--bgColor_900);
+  cursor: pointer;
+}
+
+.popupInputElement select {
+  background-color: var(--mainColor_400);
+  border: none;
+  border-radius: var(--commonBorderRadius);
+  padding: 5px 10px;
+  color: var(--textColor);
+}
+
+.popupInputElement select-selected {
+  border: none;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+.popupBody button {
+  border: none;
+  background-color: var(--mainColor_300);
+  color: var(--textColor);
+  border-radius: var(--commonBorderRadius);
+  padding: 10px;
+  margin: 40px 0px 30px 0px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.popupBody button:hover {
+  background-color: var(--mainColor_400);
+}
+
+
+
+
+
+
+
+
+.widerBody {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.widerBody .popupHeader {
+  width: 95%;
+}
+
+.widerBody form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.widerBody button {
+  margin: 20px;
+}
+
+.widerBody textarea {
+  resize: none;
+  border-radius: var(--commonBorderRadius);
+  border: none;
+  background-color: var(--mainColor_400);
+  color: var(--textColor);
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+}

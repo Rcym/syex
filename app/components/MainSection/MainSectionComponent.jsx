@@ -7,7 +7,7 @@ import RightMenu from './RightMenu/RightMenu'
 const MainSectionComponent = () => {
   return (
     <div className={mainSectionStyle.container}>
-        <LeftMenu />
+        <LeftMenu CurrentPage="Actualités" />
         <MainFeed />
         <RightMenu />
     </div>

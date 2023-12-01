@@ -1,0 +1,162 @@
+
+.pagesSection {
+    display: flex;
+    flex-grow: 1;
+}
+
+.pagesListSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.pagesListContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+.pageElement {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    position: relative;
+    margin: 0px;
+}
+
+.pageElement:last-child {
+    margin-bottom: 100px;
+}
+
+.pageElementImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageElementImg {
+    height: 90%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: var(--commonBorderRadius);
+    margin: 7px;
+}
+
+.pageElementInfo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10px;
+    height: 100%;
+}
+
+.pageElementName {
+    margin: 5px 0px 20px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pageElementInfoList {
+    margin: 0px 0px 0px 10px;
+    color: var(--softTextColor);
+}
+
+.pageElementInfoList p {
+    margin: 0px;
+    font-size: 0.9rem;
+}
+
+.joinBtn {
+    border: none;
+    background-color: var(--mainColor_300);
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: var(--commonBorderRadius);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.joinBtn:hover {
+    background-color: var(--mainColor_400);
+}
+
+
+
+
+
+
+
+
+.pageTitle {
+    margin: 20px 0px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--textColor);
+    align-self: flex-start;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--mainColor_300);
+    margin: 5px 0px 30px 0px;
+}
+
+.pagesListSearch {
+    margin: 0px 2px;
+}
+
+.recherche {
+    width: 480px;
+    margin: 0px 0px 40px 0px;
+    border: none;
+    background-color: var(--mainColor_300);
+    color: var(--textColor);
+    font-size: 1rem;
+    border-radius: var(--commonBorderRadius);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+.addPageBtn {
+    border: none;
+    background-color: var(--mainColor_300);
+    color: var(--textColor);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: var(--commonBorderRadius);
+    padding: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.addPageBtn:hover {
+    background-color: var(--bgColor_300);
+}

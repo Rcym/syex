@@ -17,7 +17,8 @@
 /*  contact list  */
 
 .contactList {
-    height: 100%;
+    height: calc(100vh - var(--navbarHeight));
+    overflow-y: auto;
     width: 300px;
     border-right: 1px solid var(--mainColor_500);
     border-left: 1px solid var(--mainColor_500);
@@ -25,4 +26,265 @@
 
 .contactList h3 {
     margin: 20px;
+}
+
+.ContactElement {
+    display: flex;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.ContactElement:hover {
+    background-color: var(--mainColor_500);
+    color: var(--mainColor_100);
+    cursor: pointer;
+}
+
+.ContactProfilePic {
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.contactInfo h3 {
+    margin: 0px;
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.contactInfo p {
+    margin: 0px;
+    font-size: 0.8rem;
+    color: var(--softTextColor);
+}
+
+
+
+
+
+
+
+
+
+/*    Information Section     */
+
+.InformationSection {
+    width: 250px;
+    border-left: 1px solid var(--mainColor_500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InformationSection h3 {
+    margin: 20px;
+    align-self: flex-start;
+}
+
+.informationElement {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 75%;
+}
+
+.infoTitle {
+    font-size: 0.8rem;
+    color: var(--softTextColor);
+}
+
+.infoContent {
+    margin: 5px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.informationContactName {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0px 30px 0px;
+}
+
+.infoSectionSpacer {
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*    Discussion Section     */
+
+.discussionSection {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.discussionTop {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.discussionCore {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+    border-top: 1px solid var(--mainColor_500);
+    border-bottom: 1px solid var(--mainColor_500);
+}
+
+.msgElement {
+    display: flex;
+    margin: 15px 0px 3px 0px;
+}
+
+.msgElementCore {
+    margin: 0px 0px 0px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.msgElement p {
+    margin: 0px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_300);
+    color: var(--mainColor_100);
+    max-width: 200px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.msgElement h4 {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: -18px;
+    width: 200px;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.ownMsgElement {
+    flex-direction: row-reverse;
+}
+
+.ownMsgElement p {
+    background-color: var(--mainColor_500);
+    /* align-self: flex-end;
+    justify-self: flex-end; */
+}
+
+.ownMsgElement h4 {
+    display: none;
+}
+
+.msgElementHiddenSender {
+    margin: 0px ;
+}
+
+.msgElementHiddenSender .msgSenderPic {
+    transform: scaleY(0);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*    Discussion Bottom     */
+
+.discussionBottom {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.msgInput {
+    flex-grow: 1;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_500);
+    color: var(--textColor);
+    padding: 0px 10px;
+    margin: 0px 0px 0px 10px;
+}
+
+.msgBtnsDivs {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    gap: 10px;
+}
+
+.sendMsgBtn {
+    background-color: var(--mainColor_300);
+    color: var(--mainColor_100);
+    border: none;
+    outline: none;
+    border-radius: var(--commonBorderRadius);
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 8px;
+}
+
+.sendMsgBtn:hover {
+    background-color: var(--mainColor_500);
+}
+
+.sendImgBtn {
+    background-color: var(--mainColor_300);
+    color: var(--mainColor_100);
+    border: none;
+    outline: none;
+    border-radius: var(--commonBorderRadius);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 3px 5px;
+}
+
+.sendImgBtn:hover {
+    background-color: var(--mainColor_500);
+}
+
+.sendImgIcon {
+    height: 32px;
+    aspect-ratio: 1/1;
 }

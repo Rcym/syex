@@ -6,7 +6,7 @@ import msgStyle from './msgStyles.module.css'
 const MessagerieMainSection = () => {
   return (
     <div className={msgStyle.messagerieMainSection}>
-        <LeftMenuComponent />
+        <LeftMenuComponent CurrentPage="Messagerie" />
         <MessagerieCore />
     </div>
   )

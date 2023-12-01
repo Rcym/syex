@@ -1,29 +1,24 @@
 import React from 'react'
 import mainStyles from './MainSection.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
-const LeftMenuComponent = () => {
+const LeftMenuComponent = ({CurrentPage}) => {
+
   return (
     <div className={mainStyles.leftMenuContainer}>
-        <div className={mainStyles.leftMenuElement}>
-          <Image className={mainStyles.MenuElementIcon} src="/home.svg" alt="search" width={25} height={25} />
-          <h3>Actualités</h3>
-        </div>
+        
+        <Link href={'/'}>
+          <MenuTab CurrentPage={CurrentPage} pageName="Actualités" pageIcon="/home.svg" />
+        </Link>
 
-        <div className={mainStyles.leftMenuElement}>
-          <Image className={mainStyles.MenuElementIcon} src="/message_letter.svg" alt="search" width={25} height={25} />
-          <h3>Messagerie</h3>
-        </div>
+        <Link href={'/messagerie'}>
+          <MenuTab CurrentPage={CurrentPage} pageName="Messagerie" pageIcon="/message_letter.svg" />
+        </Link>
 
-        <div className={mainStyles.leftMenuElement}>
-          <Image className={mainStyles.MenuElementIcon} src="/group.svg" alt="search" width={25} height={25} />
-          <h3>Groupes</h3>
-        </div>
-
-        <div className={mainStyles.leftMenuElement}>
-          <Image className={mainStyles.MenuElementIcon} src="/page.svg" alt="search" width={25} height={25} />
-          <h3>Pages</h3>
-        </div>
+        <Link href={'/page_list'}>
+          <MenuTab CurrentPage={CurrentPage} pageName="Pages" pageIcon="/home.svg" />
+        </Link>
 
         <div className={mainStyles.devider}></div>
 
@@ -31,8 +26,31 @@ const LeftMenuComponent = () => {
           <Image className={mainStyles.MenuElementIcon} src="/gear.svg" alt="search" width={25} height={25} />
           <h3>Parametres</h3>
         </div>
+
+
     </div>
   )
 }
 
 export default LeftMenuComponent
+
+
+
+const MenuTab = ({CurrentPage, pageName, pageIcon}) => {
+  
+    if (CurrentPage === pageName) {
+      return (
+        <div className={`${mainStyles.leftMenuElement} ${mainStyles.leftMenuElementActive}`}>
+          <Image className={mainStyles.MenuElementIcon} src={pageIcon} alt="search" width={25} height={25} />
+          <h3>{pageName}</h3>
+        </div>
+      )
+    } else {
+      return (
+        <div className={mainStyles.leftMenuElement}>
+          <Image className={mainStyles.MenuElementIcon} src={pageIcon} alt="search" width={25} height={25} />
+          <h3>{pageName}</h3>
+        </div>
+      )
+    }
+}

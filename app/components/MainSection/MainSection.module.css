@@ -25,6 +25,10 @@
     width: 250px;
 }
 
+.leftMenuElementActive {
+    background-color: var(--mainColor_500);
+}
+
 .leftMenuElement {
     display: flex;
     gap: 10px;
