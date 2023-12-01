@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import msgStyle from '../msgStyles.module.css'
 import ContactElement from './ContactElement'
+import AddGroup from './AddGroup'
+import AddContact from './AddContact'
 
 const ContactList = ({contactList}) => {
 
@@ -13,9 +15,24 @@ const ContactList = ({contactList}) => {
     console.log(clickedContact)
   }
 
+  // popup ajout gruope et contact
+  const [isAddingContact, setIsAddingContact] = useState(false)
+  const [isAddingGroup, setIsAddingGroup] = useState(false)
+
+
+
   return (
     <div className={msgStyle.contactList}>
+
         <h3>Contacts</h3>
+
+        <div className={msgStyle.contactBtns}>
+          <button onClick={() => {setIsAddingContact(true)}} className={msgStyle.AddGroupeBtn}>Ajouter un contact</button>
+          <button onClick={() => {setIsAddingGroup(true)}} className={msgStyle.AddGroupeBtn}>Créer un groupe</button>
+          <AddGroup isAddingGroup={isAddingGroup} setIsAddingGroup={setIsAddingGroup} />
+          <AddContact isAddingContact={isAddingContact} setIsAddingContact={setIsAddingContact} />
+        </div>
+
         {contactList.map((contact, index) => (
           <ContactElement 
             key={index}
@@ -26,6 +43,7 @@ const ContactList = ({contactList}) => {
             isGroup={contact.isGroupe}
           />
         ))}
+
 
 
     </div>

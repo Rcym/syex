@@ -22,6 +22,7 @@
 /*   Left Menu   */
 
 .leftMenuContainer {
+    position: sticky;
     width: 250px;
 }
 
@@ -100,6 +101,72 @@
 
 
 
+
+/*   acceptation demandes membres page   */
+
+.memberDemandesElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 15px;
+    background-color: var(--mainColor_300);
+    border-radius: var(--commonBorderRadius);
+}
+
+.demandeInfo {
+    display: flex;
+    margin: 5px 10px;
+    gap: 10px;
+}
+
+.memberDemandesButtons {
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 5px 10px;
+    gap: 10px;
+}
+
+.memberDemandesBtn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_400);
+    color: var(--softTextColor);
+    flex-grow: 1;
+}
+
+.memberDemandesBtn:hover {
+    background-color: var(--mainColor_500);
+    color: var(--TextColor);
+    cursor: pointer;
+}
+
+
+
+/*  gestion page   */
+
+.gestionPageBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.gestionPageBtn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_400);
+    color: var(--softTextColor);
+    flex-grow: 1;
+}
+
+.gestionPageBtn:hover {
+    background-color: var(--mainColor_300);
+    color: var(--TextColor);
+    cursor: pointer;
+}
 
 
 
@@ -314,4 +381,92 @@
 .postDetailElement:hover {
     background-color: var(--mainColor_400);
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*    profile feed     */
+
+.profileHeader {
+    display: flex;
+    align-items: center;
+}
+
+.profileHeaderImg {
+    width: 150px;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.usernameTitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+.profileHeaderInfos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.infoTitle {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    width: 155px;
+}
+
+.info {
+    font-size: 14px;
+    margin: 0px;
+    color: var(--softTextColor);
+}
+
+
+
+
+.profileBtns {
+    display: flex;
+    margin: 20px 10px;
+    gap: 10px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.profileBtn {
+    border: none;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: var(--commonBorderRadius);
+    background-color: var(--mainColor_400);
+    color: var(--softTextColor);
+}
+
+.profileBtn:hover {
+    background-color: var(--mainColor_300);
+    cursor: pointer;
+    color: var(--TextColor);
 }

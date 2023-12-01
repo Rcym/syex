@@ -1,4 +1,4 @@
-import cnxStyle from '../connexion/cnx.module.css'
+import cnxStyle from '../cnx.module.css'
 import Link from 'next/link'
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
 
       </form>
-      <Link href={'/connexion'}>
+      <Link href={'/'}>
         <div className={cnxStyle.createAccDiv}>
           <p>Retour a la page de connexion</p>
         </div>

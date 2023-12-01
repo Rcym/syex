@@ -8,7 +8,7 @@ const LeftMenuComponent = ({CurrentPage}) => {
   return (
     <div className={mainStyles.leftMenuContainer}>
         
-        <Link href={'/'}>
+        <Link href={'/home'}>
           <MenuTab CurrentPage={CurrentPage} pageName="Actualités" pageIcon="/home.svg" />
         </Link>
 
@@ -22,9 +22,14 @@ const LeftMenuComponent = ({CurrentPage}) => {
 
         <div className={mainStyles.devider}></div>
 
-        <div className={mainStyles.leftMenuElement}>
-          <Image className={mainStyles.MenuElementIcon} src="/gear.svg" alt="search" width={25} height={25} />
+        {/* <div className={mainStyles.leftMenuElement}>
+          <Image className={mainStyles.MenuElementIcon} src="/gear.svg" alt="" width={25} height={25} />
           <h3>Parametres</h3>
+        </div> */}
+
+        <div className={`${mainStyles.leftMenuElement} ${mainStyles.dcnx}`}>
+          <Image className={mainStyles.MenuElementIcon} src="/dcnx.svg" alt="" width={25} height={25} />
+          <h3>Deconnexion</h3>
         </div>
 
 

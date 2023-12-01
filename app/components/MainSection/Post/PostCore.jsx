@@ -6,7 +6,8 @@ const PostCore = ({text, imgPath}) => {
   return (
     <div className={mainStyles.postCore}>
         <p className={mainStyles.testSection}>{text}</p>
-        <Image className={mainStyles.postImg} src={imgPath} alt="search" width={600} height={300}/>
+        {/* <Image className={mainStyles.postImg} src={imgPath} alt="search" width={600} height={300}/> */}
+        <img className={mainStyles.postImg} src={imgPath} alt="" />
     </div>
   )
 }

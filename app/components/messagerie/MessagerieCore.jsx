@@ -34,7 +34,7 @@ const MessagerieCore = () => {
     <div className={msgStyle.messagerieCore}>
       <ContactList contactList={contactList} />
       <DiscussionSection />
-      <InformationSection contactToInfo={selectedContact}/>
+      <InformationSection contactToInfo={selectedContact} isGroup={true}/>
     </div>
   )
 }

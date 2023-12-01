@@ -10,7 +10,7 @@ const NavBarComponent = () => {
 
   return (
     <div className={navbarStyles.container}>
-      <h3 className={navbarStyles.logo}>semaFORT</h3>
+      <h3 className={navbarStyles.logo}>Projet SYEX</h3>
 
       <SearchBar />
 
